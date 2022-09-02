@@ -13,6 +13,7 @@
 
 const Parimal_19IT141 = artifacts.require('./Parimal_19IT141.sol');
 const TokenSale = artifacts.require('./TokenSale.sol');
+// Token Price is 0.01 Ether
 const tokenPrice = 1000000000000000;
 
 module.exports = function (deployer) {

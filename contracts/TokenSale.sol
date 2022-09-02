@@ -32,6 +32,16 @@ contract TokenSale {
         emit Sell(msg.sender, _numberOfTokens);
     }
 
+    /*
+        buy function explanation and intial requirement 
+       
+        -> Require that value is equle to tokens
+        -> Rquire that the contarct has enough tokens
+        -> Reuire that a transfer is successfull tokens
+        -> Keep Track of tokens Sold
+        -> Trigger Sell Event
+    */
+
     function endSale() public payable {
         require(msg.sender == admin);
         require(
