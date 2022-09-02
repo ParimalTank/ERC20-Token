@@ -1,6 +1,6 @@
 pragma solidity ^0.8.15;
 
-contract parimal_19IT141 {
+contract Parimal_19IT141 {
     string public name = "Parimal_19IT141";
     string public symbol = "19IT141";
     string public standard = "Parimal_19IT141 v1.0";
