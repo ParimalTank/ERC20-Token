@@ -28,18 +28,29 @@ App = {
   },
 
   initContracts: function () {
-    $.getJSON('TokenSale.json', function (tokenSale) {
-      App.contracts.TokenSale = TruffleContract(tokenSale);
-      App.contracts.TokenSale.setProvider(App.web3Provider);
-      App.contracts.TokenSale.deployed().then(function (tokenSale) {
-        console.log('TokenSale Token Sale Address:', tokenSale.address);
+    $.getJSON('TokenSale.json', function (parimal_19IT141_Sale) {
+      App.contracts.Parimal_19IT141_Sale =
+        TruffleContract(parimal_19IT141_Sale);
+      App.contracts.Parimal_19IT141_Sale.setProvider(App.web3Provider);
+      App.contracts.Parimal_19IT141_Sale.deployed().then(function (
+        parimal_19IT141_Sale
+      ) {
+        console.log(
+          'Parimal_19IT141 Token Sale Address:',
+          parimal_19IT141_Sale.address
+        );
       });
     }).done(function () {
-      $.getJSON('TokenSale.json', function (tokenSale) {
-        App.contracts.TokenSale = TruffleContract(tokenSale);
-        App.contracts.TokenSale.setProvider(App.web3Provider);
-        App.contracts.TokenSale.deployed().then(function (tokenSale) {
-          console.log('TokenSale Token Sale Address:', tokenSale.address);
+      $.getJSON('parimal_19IT141.json', function (parimal_19IT141) {
+        App.contracts.Parimal_19IT141 = TruffleContract(parimal_19IT141);
+        App.contracts.Parimal_19IT141.setProvider(App.web3Provider);
+        App.contracts.Parimal_19IT141.deployed().then(function (
+          parimal_19IT141
+        ) {
+          console.log(
+            'Parimal_19IT141 Token Address:',
+            parimal_19IT141.address
+          );
 
           App.listenForEvents();
           return App.render();
@@ -50,7 +61,7 @@ App = {
 
   // Listen for events emitted from the contract
   listenForEvents: function () {
-    App.contracts.Manan19IT103TokenSale.deployed().then(function (instance) {
+    App.contracts.Parimal_19IT141_Sale.deployed().then(function (instance) {
       instance
         .Sell(
           {},
@@ -91,17 +102,17 @@ App = {
     }
 
     // Load token sale contract
-    App.contracts.TokenSale.deployed()
+    App.contracts.Parimal_19IT141_Sale.deployed()
       .then(function (instance) {
-        tokenSaleInstance = instance;
-        return tokenSaleInstance.tokenPrice();
+        parimal_19IT141_Sale_Instance = instance;
+        return parimal_19IT141_Sale_Instance.tokenPrice();
       })
       .then(function (tokenPrice) {
         App.tokenPrice = tokenPrice;
         $('.token-price').html(
           web3.fromWei(App.tokenPrice, 'ether').toNumber()
         );
-        return tokenSaleInstance.tokensSold();
+        return parimal_19IT141_Sale_Instance.tokensSold();
       })
       .then(function (tokensSold) {
         console.log('Token Sold ');
@@ -114,13 +125,13 @@ App = {
         $('#progress').css('width', progressPercent + '%');
 
         // Load token contract
-        App.contracts.Darshan_19IT143.deployed()
+        App.contracts.Parimal_19IT141.deployed()
           .then(function (instance) {
-            const darshan19IT143Instance = instance;
-            return darshan19IT143Instance.balanceOf(App.account);
+            const parimal_19IT141_Instance = instance;
+            return parimal_19IT141_Instance.balanceOf(App.account);
           })
           .then(function (balance) {
-            $('.d143-balance').html(balance.toNumber());
+            $('.p141-balance').html(balance.toNumber());
             App.loading = false;
             loader.hide();
             content.show();
@@ -132,7 +143,7 @@ App = {
     $('#content').hide();
     $('#loader').show();
     const numberOfTokens = $('#numberOfTokens').val();
-    App.contracts.TokenSale.deployed()
+    App.contracts.Parimal_19IT141_Sale.deployed()
       .then(function (instance) {
         return instance.buyTokens(numberOfTokens, {
           from: App.account,
