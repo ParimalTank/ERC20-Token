@@ -1,0 +1,113 @@
+{
+  "contractName": "Parimal_19IT141_Sale",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.15+commit.e14f2714\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Parimal_19IT141_Sale.sol\":\"Parimal_19IT141_Sale\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Parimal_19IT141_Sale.sol\":{\"keccak256\":\"0xc5a63b86be8c01013eab2334333b2e9a9abc30f1382f9f21a705ef455b49c0d9\",\"urls\":[\"bzz-raw://86243358fb0d2be6f10960c2ce56c8428c72f9001fb01151c006c29174f51729\",\"dweb:/ipfs/QmaKLDz5Ah291LUztkzvx8oFQV9hJcvtXeuS4TS6S19T5D\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212206a56a38f30b378f8d5dc7c0a899940cfc11c2aa38841491f2ff8b424a5d6a8b264736f6c634300080f0033",
+  "deployedBytecode": "0x6080604052600080fdfea26469706673582212206a56a38f30b378f8d5dc7c0a899940cfc11c2aa38841491f2ff8b424a5d6a8b264736f6c634300080f0033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "28:135:2:-:0;;;65:95;;;;;;;;;;28:135;;;;;;",
+  "deployedSourceMap": "28:135:2:-:0;;;;;",
+  "source": "pragma solidity ^0.8.15;\r\n\r\ncontract Parimal_19IT141_Sale {\r\n    constructor() {\r\n        //Assign Admin\r\n        //Token Contract\r\n        //Token Price\r\n    }\r\n}\r\n",
+  "sourcePath": "D:\\ERC20-Token\\contracts\\Parimal_19IT141_Sale.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/Parimal_19IT141_Sale.sol",
+    "exportedSymbols": {
+      "Parimal_19IT141_Sale": [
+        225
+      ]
+    },
+    "id": 226,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 220,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".15"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:2"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Parimal_19IT141_Sale",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 225,
+        "linearizedBaseContracts": [
+          225
+        ],
+        "name": "Parimal_19IT141_Sale",
+        "nameLocation": "37:20:2",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 223,
+              "nodeType": "Block",
+              "src": "79:81:2",
+              "statements": []
+            },
+            "id": 224,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 221,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "76:2:2"
+            },
+            "returnParameters": {
+              "id": 222,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "79:0:2"
+            },
+            "scope": 225,
+            "src": "65:95:2",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 226,
+        "src": "28:135:2",
+        "usedErrors": []
+      }
+    ],
+    "src": "0:165:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.15+commit.e14f2714.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.8",
+  "updatedAt": "2022-08-31T14:43:53.682Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
